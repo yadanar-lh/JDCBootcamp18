@@ -2,13 +2,13 @@ void main() {
     Scanner input = new Scanner(System.in);
 
     System.out.print("Enter Miles Driven : ");
-    int milesDriven = input.nextInt();
+    double milesDriven = input.nextDouble();
 
     System.out.print("Enter Gallon Used : ");
-    int gallonUsed = input.nextInt();
+    double gallonUsed = input.nextDouble();
 
-    int mpg = milesDriven/gallonUsed;
+    double mpg = milesDriven/gallonUsed;
 
-    System.out.println("MPG : %s miles per gallon".formatted(mpg));
+    System.out.println("MPG : %.1f miles per gallon".formatted(mpg));
 
 }
