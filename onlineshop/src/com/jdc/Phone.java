@@ -10,6 +10,6 @@ public class Phone extends Electronics{
 
     @Override
     public double computeSalesPrice(){
-        return super.computeSalesPrice();
+        return getPrice() - (getPrice() * 0.1);
     }
 }
