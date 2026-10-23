@@ -1,6 +1,6 @@
 package demo;
 
-public class SingYoYeYo implements Quest{
+public class SingYoYeYoQuest implements Quest{
     @Override
     public void goQuest() {
         System.out.println("Knight sings 'Yo Ye Yo' 🎶🎤 ");
