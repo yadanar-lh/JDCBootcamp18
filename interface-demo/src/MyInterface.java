@@ -17,6 +17,11 @@ public abstract interface MyInterface {
     //class extends class
     //interface extends interface
 
+    //class can be horizonal(more) and vertical
+    //interface is always vertical
+
+    //when implementing interface, 1. type become the same
+
     //before java 8
     public abstract  void test();
 
