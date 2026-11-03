@@ -25,6 +25,14 @@ public class SumNumber {
         return total;
     }
 
+    public double sum(Object[] arr){
+        double total = 0;
+        for(Object o : arr){
+//            total += o; not working
+        }
+        return total;
+    }
+
     void main(){
         int[] intArray = {1,2,3,4,5};
         System.out.println("Sum : " + sum(intArray));
