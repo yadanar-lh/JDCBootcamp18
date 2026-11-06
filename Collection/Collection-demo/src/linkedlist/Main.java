@@ -17,6 +17,8 @@ public class Main {
         list.addLast(11);
         list.display();
 
+
+
         System.out.println("Remove Last: " + list.removeFromLast());
         list.display();
 
@@ -27,6 +29,8 @@ public class Main {
         System.out.print("\n" + linkedList);
         linkedList.addLast(9);
         linkedList.addLast(11);
+
+
         System.out.println("\n" + linkedList);
         System.out.println(linkedList.removeFirst());
         System.out.println("\n" + linkedList);

@@ -15,6 +15,38 @@ public class DoublyLInkedList {
 
     private Node head = null;
     private Node tail = null;
+
+    public int removeFirst(){
+        if(head == null){
+            System.out.println("Empty List");
+            return -1;
+        }
+        Node removeNode = head;
+        if(head == tail){
+            head = tail = null;
+        } else {
+
+            head = removeNode.next;
+            removeNode.next.prev = null;
+        }
+        return removeNode.data;
+    }
+
+    public int removeLast(){
+        if(tail== null){
+            System.out.println("Empty List");
+            return -1;
+        }
+       Node removeNode = tail;
+        if(head == tail){
+            head = tail = null;
+        } else {
+            tail = removeNode.prev;
+            removeNode.prev.next = null;
+        }
+        return removeNode.data;
+    }
+
     public void addFirst(int data){
         Node newNode = new Node(data);
         if(head == null){
@@ -23,6 +55,17 @@ public class DoublyLInkedList {
             newNode.next = head;
             head.prev = newNode;
             head = newNode;
+        }
+    }
+
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        if(tail == null){
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
         }
     }
 
